@@ -108,7 +108,7 @@ export default function EditPurchaseOrderPage() {
     harga: "",
   })
 
-  const handleInputChange = (field: string, value: string | boolean) => {
+  const handleInputChange = (field: string, value: string | boolean | BarangItem[]) => {
     setFormData((prev) => ({
       ...prev,
       [field]: value,
